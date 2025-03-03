@@ -1,0 +1,171 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<title>Sidebar 03</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="~/css/HRCSS/css/style.css">
+	@RenderSection("Style", required: false)
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+		#sidebar {
+			min-width: 270px;
+			max-width: 270px;
+			background: #1A3636 !important;
+			color: #fff;
+			-webkit-transition: all 0.3s;
+			-o-transition: all 0.3s;
+			transition: all 0.3s;
+			position: relative;
+		}
+
+			#sidebar .custom-menu .btn.btn-primary {
+				background: #1A3636;
+				border-color: #1A3636;
+			}
+
+				#sidebar .custom-menu .btn.btn-primary:hover {
+					background-color: #D6BD98 !important;
+					border-color: #D6BD98 !important;
+				}
+
+				#sidebar .custom-menu .btn.btn-primary:hover, #sidebar .custom-menu .btn.btn-primary:focus {
+					background: #D6BD98 !important;
+					border-color: #D6BD98 !important;
+				}
+
+		.btn-dark:focus {
+			background: #1A3636;
+			border-color: #1A3636;
+			transition: all .5s;
+		}
+
+		.btn-dark{
+			background: #1A3636;
+			border-color: #1A3636;
+			transition: all .5s;
+		}
+		.btn-dark:hover {
+				background-color: #D6BD98 !important;
+				border-color: #D6BD98 !important;
+			}
+
+		input, textarea {
+			border: 3px solid transparent !important;
+			box-shadow: 0 0 3px #677D6A !important;
+		}
+
+			input:focus, textarea:focus {
+				outline: none !important;
+				border: 3px solid #D6BD98 !important;
+				box-shadow: none !important;
+			}
+
+		.form-control {
+			box-shadow: 0 0 3px #677D6A !important;
+		}
+
+		.back {
+			color: #1A3636 !important;
+		}
+
+			.back:hover {
+				color: #677D6A !important;
+			}
+
+		.btn-success {
+			background-color: #1A3636 !important;
+			transition: all .5s;
+		}
+
+
+			.btn-success:hover {
+				background-color: #D6BD98 !important;
+			}
+
+		.table .thead-dark th {
+			color: #fff;
+			background-color: #1A3636;
+			border-color: #1A3636;
+		}
+</style>
+</head>
+<body>
+
+	<div class="wrapper d-flex align-items-stretch">
+		<nav id="sidebar" @* class="active" *@>
+			<div class="custom-menu">
+				<button type="button" id="sidebarCollapse" class="btn btn-primary">
+					<i class="fa fa-bars"></i>
+					<span class="sr-only">Toggle Menu</span>
+				</button>
+			</div>
+			<div class="p-4">
+				@* <h1><a href="index.html" class="logo">Flash</a></h1> *@
+				<img src="/img/ByteCraft.png" style="width: 227px" alt="Alternate Text" />
+				<ul class="list-unstyled components mb-5">
+					<li class="active">
+						<a asp-action="Index" asp-controller="HRDashboard"><i class="fa fas fa-home mr-3"></i>Home</a>
+					</li>
+					<li >
+						<a asp-action="Department" asp-controller="HRDashboard"><i class="fa fa-building mr-3"></i>Department</a>
+					</li>
+					<li>
+						<a asp-action="Manager" asp-controller="HRDashboard"><i class="fa fa-user mr-3 mr-3"></i>Manager</a>
+					</li>
+					<li>
+						<a asp-action="IndexEmployee" asp-controller="HRDashboard"><i class="fa fa-users mr-3"></i>Employee</a>
+					</li>
+					<li>
+						<a asp-action="feedback" asp-controller="HRDashboard"><i class="fa fa-star mr-3"></i>Feedback</a>
+					</li>
+					<li>
+						<a asp-action="HrProfile" asp-controller="HRDashboard"><i class="fa fa-user mr-3"></i>Profile</a>
+					</li>
+					<li>
+						<a asp-action="Logout" asp-controller="HRDashboard"><i class="fa fa-sign-out mr-3"></i>Logout</a>
+					</li>
+				</ul>
+
+				@* <div class="mb-5">
+					<h3 class="h6 mb-3">Subscribe for newsletter</h3>
+					<form action="#" class="subscribe-form">
+						<div class="form-group d-flex">
+							<div class="icon"><span class="icon-paper-plane"></span></div>
+							<input type="text" class="form-control" placeholder="Enter Email Address">
+						</div>
+					</form>
+				</div>
+
+				<div class="footer">
+					<p>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div> *@
+
+			</div>
+		</nav>
+
+		<!-- Page Content  -->
+		<div id="content" class="p-4 p-md-5 pt-5">
+		
+				@RenderBody()
+			
+		</div>
+	</div>
+
+	<script src="~/js/HRJS/js/bootstrap.js"></script>
+	<script src="~/js/HRJS/js/jquery.min.js"></script>
+	<script src="~/js/HRJS/popper.js"></script>
+	<script src="~/js/HRJS/main.js"></script>
+</body>
+</html>
+
+    
+

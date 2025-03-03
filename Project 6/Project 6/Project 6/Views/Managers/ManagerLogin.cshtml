@@ -1,0 +1,39 @@
+﻿@model Project_6.Models.Manager
+
+@{
+    ViewData["Title"] = "Manager Login";
+    Layout = "~/Views/Shared/HomeLayout.cshtml";
+}
+
+<style>
+
+    section {
+        background: linear-gradient(90deg, rgba(103,125,106,.5) 0%, rgba(103,125,106,.5) 35%), url('../img/Frame 1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+</style>
+
+<h2>Manager Login</h2>
+
+<form asp-action="ManagerLogin" method="post">
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="text-danger">
+        @Html.ValidationSummary()
+    </div>
+}

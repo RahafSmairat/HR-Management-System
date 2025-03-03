@@ -1,0 +1,47 @@
+﻿@model Project_6.Models.Manager
+@{
+    Layout = "~/Views/Shared/_HHLayout.cshtml";
+}
+<h2>Add Manager</h2>
+<hr />
+
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form asp-action="CreateManager" enctype="multipart/form-data" class="bg-dark text-white p-4 rounded">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Name</label>
+                <input asp-for="Name" class="form-control" placeholder="Enter manager's name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">Email</label>
+                <input asp-for="Email" class="form-control" placeholder="Enter email address" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label">Password</label>
+                <input type="password" asp-for="Password" class="form-control" placeholder="Enter password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProfileImage" class="control-label">Profile Image</label>
+                <input type="file" asp-for="ProfileImage" class="form-control-file" />
+                <span asp-validation-for="ProfileImage" class="text-danger"></span>
+            </div>
+            <div class="form-group text-center">
+                <input type="submit" value="Create" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="mt-3 text-center">
+    <a asp-action="Manager" class="btn btn-secondary">Back to List</a>
+</div>
+</div>
+
+
+

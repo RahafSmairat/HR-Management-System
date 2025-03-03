@@ -1,0 +1,52 @@
+﻿@model List<Project_6.Models.EmpTask>
+
+<style>
+    .table .thead-dark th {
+        background-color: #40534C;
+    }
+</style>
+
+
+<h2>Employee Tasks</h2>
+
+
+<td><a asp-action="ExportTasksAsPdf" asp-route-id="@Context.Session.GetInt32("ManagerId")" class="btn btn-primary">Download Tasks as PDF</a></td>
+
+@if (Model != null && Model.Count > 0)
+{
+    <div class="container" style="margin-top:80px ;">
+	<table class="table table-bordered table-striped table-responsive-stack">
+        <thead class="thead-dark">
+
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Assigned Date</th>
+                <th>Due Date</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var task in Model)
+            {
+                <tr>
+                    <td>@task.Name</td>
+                    <td>@task.Description</td>
+                    <td>@task.Status</td>
+                    <td>@task.AssignedDate</td>
+                    <td>@task.DueDate</td>
+                   
+                </tr>
+            }
+        </tbody>
+    </table>
+    </div>
+}
+else
+{
+    <p>@ViewBag.Message</p>
+}
+
+
+

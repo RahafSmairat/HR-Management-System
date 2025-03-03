@@ -1,0 +1,79 @@
+﻿@model Project_6.Models.EmpTask
+
+@{
+    ViewData["Title"] = "Assign Task";
+}
+
+<h1>Assign Task</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="AssignTask" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Task Name -->
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" placeholder="Enter Task Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <!-- Task Description -->
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" class="form-control" placeholder="Enter Task Description"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            @* <!-- Task Status --> *@
+            @* <div class="form-group"> *@
+            @*     <label asp-for="Status" class="control-label"></label> *@
+            @*     <select asp-for="Status" class="form-control"> *@
+            @*         <option value="Pending">Pending</option> *@
+            @*         <option value="In Progress">In Progress</option> *@
+            @*         <option value="Completed">Completed</option> *@
+            @*     </select> *@
+            @*     <span asp-validation-for="Status" class="text-danger"></span> *@
+            @* </div> *@
+
+            <!-- Select Employee -->
+            <div class="form-group">
+                <label asp-for="EmployeeId" class="control-label"></label>
+                <select asp-for="EmployeeId" class="form-control" asp-items="ViewBag.EmployeeId">
+                    <option value="">-- Select Employee --</option>
+                </select>
+                <span asp-validation-for="EmployeeId" class="text-danger"></span>
+            </div>
+
+            <!-- Assigned Date -->
+            <div class="form-group">
+                <label asp-for="AssignedDate" class="control-label"></label>
+                <input asp-for="AssignedDate" type="date" class="form-control" />
+                <span asp-validation-for="AssignedDate" class="text-danger"></span>
+            </div>
+
+            <!-- Due Date -->
+            <div class="form-group">
+                <label asp-for="DueDate" class="control-label"></label>
+                <input asp-for="DueDate" type="date" class="form-control" />
+                <span asp-validation-for="DueDate" class="text-danger"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <input type="submit" value="Assign Task" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="back">Back to Task List</a>
+</div>
+
+@* @section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+} *@

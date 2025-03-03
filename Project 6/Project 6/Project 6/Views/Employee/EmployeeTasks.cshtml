@@ -1,0 +1,170 @@
+﻿@model IEnumerable<Project_6.Models.EmpTask>
+
+
+@{
+    Layout = "~/Views/Shared/_LayoutEmployee.cshtml";
+}
+
+@{
+    <style>
+        .taskBtn:hover {
+            background-color: #D6BD98;
+        }
+
+        .taskBtn {
+            background-color: #677D6A;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            font-size: 14px;
+            cursor: pointer;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        .voiceSearch {
+            position: absolute;
+            left: 500px;
+            top: 5%;
+        }
+    </style>
+}
+
+<div class="Voice voiceSearch">
+    <input type="text" id="taskSearch" placeholder="Search for a task..." oninput="filterTasks(this.value.toLowerCase())">
+    <button onclick="startVoiceSearch()">
+        <i class="fa fa-microphone"></i>
+    </button>
+</div>
+
+<form method="post" asp-action="UpdateTasks" style="    width: 60%;    margin-left: 500px;    margin-top: 90px;">
+    <h3><i class="fa fa-list"></i> To Do</h3>
+    <table style="margin-bottom: 50px;" class="table table-bordered table-striped table-responsive-stack" id="tableOne">
+        <thead>
+            <tr style="background-color:#40534C; color:white;">
+                <th>Task</th>
+                <th>Description</th>
+                <th>Assigned Date</th>
+                <th>Due Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var task in Model.Where(t => t.Status == "To Do"))
+            {
+                <tr>
+                    <td><strong>@task.Name</strong></td>
+                    <td>@task.Description</td>
+                    <td>@task.AssignedDate</td>
+                    <td>@task.DueDate</td>
+                    <td>
+                        <select name="updatedTasks[@task.Id].Status">
+                            <option value="To Do" selected>To Do</option>
+                            <option value="Doing">Doing</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                    </td>
+                    <input type="hidden" name="updatedTasks[@task.Id].Id" value="@task.Id" />
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h3><i class="fa fa-spinner fa-spin"></i> Doing</h3>
+    <table style="margin-bottom: 50px;" class="table table-bordered table-striped table-responsive-stack" id="tableOne">
+        <thead>
+            <tr style="background-color:#40534C; color:white;">
+                <th>Task</th>
+                <th>Description</th>
+                <th>Assigned Date</th>
+                <th>Due Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var task in Model.Where(t => t.Status == "Doing"))
+            {
+                <tr>
+                    <td><strong>@task.Name</strong></td>
+                    <td>@task.Description</td>
+                    <td>@task.AssignedDate</td>
+                    <td>@task.DueDate</td>
+                    <td>
+                        <select name="updatedTasks[@task.Id].Status">
+                            <option value="To Do">To Do</option>
+                            <option value="Doing" selected>Doing</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                    </td>
+
+                    <input type="hidden" name="updatedTasks[@task.Id].Id" value="@task.Id" />
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h3><i class="fa fa-check"></i> Completed</h3>
+    <table style="margin-bottom: 50px;" class="table table-bordered table-striped table-responsive-stack" id="tableOne">
+        <thead>
+            <tr style="background-color:#40534C; color:white;">
+                <th>Task</th>
+                <th>Description</th>
+                <th>Assigned Date</th>
+                <th>Due Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var task in Model.Where(t => t.Status == "Completed"))
+            {
+                <tr>
+                    <td><strong>@task.Name</strong></td>
+                    <td>@task.Description</td>
+                    <td>@task.AssignedDate</td>
+                    <td>@task.DueDate</td>
+                    <td>
+                        <select name="updatedTasks[@task.Id].Status">
+                            <option value="To Do">To Do</option>
+                            <option value="Doing">Doing</option>
+                            <option value="Completed" selected>Completed</option>
+                        </select>
+                    </td>
+                    <input type="hidden" name="updatedTasks[@task.Id].Id" value="@task.Id" />
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div>
+        <button type="submit" class="taskBtn">
+            Save Changes
+        </button>
+    </div>
+</form>
+
+<script>
+    function startVoiceSearch() {
+        const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+        recognition.lang = "en-US";
+        recognition.start();
+
+        recognition.onresult = function(event) {
+            const searchQuery = event.results[0][0].transcript.toLowerCase();
+            document.getElementById('taskSearch').value = searchQuery;
+            filterTasks(searchQuery);
+        };
+    }
+
+    function filterTasks(query) {
+        const rows = document.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+            const taskName = row.querySelector('td strong').innerText.toLowerCase();
+            if (taskName.includes(query)) {
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    }
+</script>

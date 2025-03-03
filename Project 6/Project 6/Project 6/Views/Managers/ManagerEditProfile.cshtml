@@ -1,0 +1,128 @@
+﻿@model Project_6.Models.Manager
+
+
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6 uxa-form-group mt-5">
+
+            <!-- Avatar Image -->
+            <div class="uxa-user-avatar">
+                <img src="@Model.ProfileImage" alt="User avatar" class="img-fluid rounded-circle" style="width: 150px; height: 150px;">
+            </div>
+
+            <!-- Edit Profile Form -->
+            <form asp-action="ManagerEditProfileHandle" method="post" enctype="multipart/form-data" class="mt-5 mb-5">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <!-- Image Upload -->
+                <div class="form-group">
+                    <label for="ProfileImage">Change Profile Image:</label>
+                    <input type="file" class="form-control" name="profilePicture" accept="image/*" />
+                    <span asp-validation-for="ProfileImage" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Name">Name:</label>
+                    <input type="text" class="form-control" name="Name" value="@Model.Name" required />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Email">Email:</label>
+                    <input type="text" class="form-control" name="Email" value="@Model.Email" required readonly/>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+
+
+
+                <div class="pt-1 mb-4 editbtn">
+                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-lg btn-block" type="submit">Save Change</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+<style>
+    .form-group {
+        margin: 5%;
+    }
+
+    .uxa-form-group {
+        background-color: white;
+        padding: 2rem;
+        box-shadow: 0 0.2rem 0.6rem rgba(50, 50, 50, 0.15);
+    }
+
+    .form-group span {
+        color: red;
+    }
+
+    .uxa-user-avatar {
+        width: 140px;
+        height: 140px;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        // border: 1px solid lightgray;
+        // background-image: url(https://www.youth4work.com/Images/Users/771710.png);
+        // background-position: center center;
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // background-color: white;
+    }
+
+
+
+        .uxa-user-avatar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .uxa-user-avatar:hover img {
+            transform: scale(1.05); /* تكبير الصورة عند التمرير */
+        }
+
+    .img {
+        width: 150px;
+    }
+
+    .editbtn {
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .edit-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        display: none; /* الزر مخفي بشكل افتراضي */
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .uxa-user-avatar:hover .edit-btn {
+        display: block; /* الزر يظهر عند التمرير */
+        background-color: rgba(0, 0, 0, 0.8); /* تغيير اللون عند التمرير */
+    }
+
+    .edit-btn i {
+        font-size: 16px;
+    }
+</style>

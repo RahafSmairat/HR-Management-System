@@ -1,0 +1,93 @@
+﻿@model IEnumerable<Project_6.Models.Attendance>
+
+@{
+    Layout = "~/Views/Shared/_LayoutEmployee.cshtml";
+
+}
+
+@section Style {
+
+    <link rel="stylesheet" href="~/css/EMPCSS/css/Table.css" asp-append-version="true" />
+
+}
+
+
+@{
+    <style>
+        #punchInBtn:disabled{
+            background-color: grey;
+        }
+
+        #punchOutBtn:disabled {
+            background-color: grey;
+        }
+    </style>
+}
+
+<div class="container" style="margin-top:80px ; margin-left:400px">
+
+    <h2>Attendance</h2>
+
+    <div class="btn-1">
+
+        <div class="btn-1">
+            <button onclick="window.location.href='@Url.Action("PunchIn","Employee")'"
+                    class="button_1"
+                    id="punchInBtn"
+            @(ViewBag.IsPunchedIn ? "disabled" : "") style="background-color:#195701; color:white;">
+                Punch In
+            </button>
+
+            <button onclick="window.location.href='@Url.Action("PunchOut","Employee")'"
+                    class="button_1"
+                    id="punchOutBtn"
+            @(ViewBag.IsPunchedIn ? "" : "disabled") style="background-color:#750000; color:white;">
+                Punch Out
+            </button>
+        </div>
+
+
+    </div>
+    
+    <table class="table table-bordered table-striped table-responsive-stack" id="tableOne">
+        <thead class="thead-dark">
+            <tr>
+                <th>Date</th>
+                <th>PunchInTime</th>
+                <th>PunchOutTime</th>
+                <th>Total Hours</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.Date</td>
+                    <td>@item.PunchInTime</td>
+                    <td>@item.PunchOutTime</td>
+                    @if(item.PunchOutTime == null)
+                    {
+                        <td>N/A</td>
+                    }
+                    else
+                    {
+                        <td>@((item.PunchOutTime.GetValueOrDefault() - item.PunchInTime.GetValueOrDefault()).ToString(@"hh\:mm\:ss"))</td>
+                    }
+                   
+
+                </tr>
+            }
+           
+            
+        </tbody>
+    </table>
+
+
+</div>
+
+
+@section Script {
+
+    <script src="~/js/EMPJS/js/Table.js"></script>
+
+}

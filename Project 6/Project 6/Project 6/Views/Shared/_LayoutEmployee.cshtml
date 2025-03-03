@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Sidebar 09</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/EMPCSS/css/StyleMain.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/EMPCSS/css/bootstrap.min.css" asp-append-version="true" />
+   
+    @RenderSection("Style",required:false)
+   
+</head>
+<body>
+   
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="custom-menu">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                </button>
+            </div>
+            <div class="img bg-wrap text-center py-4" style="background-image: url('/img/ByteCraft.png'); width:300px; height:70px;">
+            </div>
+            <ul class="list-unstyled components mb-5">
+                <li >
+                    <a  asp-action="Index" asp-controller="Employee"><i class="fa-solid fa-clipboard-user mr-3"></i>Attendance</a>
+                </li>
+                <li>                 
+                   
+                    <a  asp-action="EmployeeTasks" asp-controller="Employee"><i class="fa-solid fa-list-check mr-3"></i>Tasks</a>
+                </li>
+                <li>
+                    <a  asp-action="MyLeaves" asp-controller="Employee"><i class="fa-solid fa-person-walking-arrow-right mr-3"></i>Leaves</a>
+                </li>
+                <li>
+                    <a asp-action="Profile" asp-controller="Employee"><i class="fa-solid fa-user mr-3"></i>Profile</a>
+                </li>
+                <li>
+                    <a asp-action="Logout" asp-controller="Employee"><span class="fa fa-sign-out mr-3"></span>Logout</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        @RenderBody()
+    </div>
+
+    @RenderSection("Script", required: false);
+    <script src="~/js/EMPJS/js/bootstarp.js"></script>
+    <script src="~/js/EMPJS/js/jquery.min.js"></script>
+    <script src="~/js/EMPJS/js/main.js"></script>
+    <script src="~/js/EMPJS/js/popper.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Project_6.Models.Employee>
+@{
+    Layout = "~/Views/Shared/_HHLayout.cshtml";
+}
+
+<style>
+    .btn.btn-primary{
+        background-color: #1A3636 !important;
+        transition: all .5s;
+    }
+
+    .btn.btn-primary:hover {
+            background-color: #D6BD98 !important;
+            border-color: #D6BD98 !important;
+    }
+</style>
+
+<h2 > Employee</h2>
+
+<hr />
+
+<button id="downloadPdf" class="btn btn-dark">Download As PDF 📥</button>
+<br /><br />
+
+<table class="table table-bordered table-striped table-responsive-stack" id="tableTwo">
+    <thead class="thead-dark">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+            @* <th>@Html.DisplayNameFor(model => model.Password)</th> *@
+            <th>@Html.DisplayNameFor(model => model.ProfileImage)</th>
+            <th>@Html.DisplayNameFor(model => model.Position)</th>
+            <th>@Html.DisplayNameFor(model => model.Department)</th>
+            @* <th>@Html.DisplayNameFor(model => model.Manager)</th> *@
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                @* <td>@Html.DisplayFor(modelItem => item.Password)</td> *@
+                <td><img src="@Url.Content("~/HR_image/" + item.ProfileImage)" width="50" height="50" alt="Profile Image" /></td>
+                <td>@Html.DisplayFor(modelItem => item.Position)</td>
+                <td>@Html.DisplayFor(modelItem => item.Department.Name)</td>
+                @* <td>@Html.DisplayFor(modelItem => item.Manager.Id)</td> *@
+                <td>
+                    <a href="@Url.Action("EmployeeDetails", new { id = item.Id })" class="btn btn-primary">Details</a>
+                    <!-- Additional action buttons can be added here -->
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    
+    <a asp-action="IndexEmployee" class="btn btn-dark">Back to List</a>
+</div>
+
+
+<script>
+    document.getElementById('downloadPdf').addEventListener('click', function () {
+        const { jsPDF } = window.jspdf;
+        let doc = new jsPDF();
+
+        html2canvas(document.body).then(canvas => {
+            let imgData = canvas.toDataURL('image/png');
+            let imgWidth = 210; // A4 width in mm
+            let pageHeight = 297; // A4 height in mm
+            let imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+            doc.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+            doc.save('Report.pdf');
+        });
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>

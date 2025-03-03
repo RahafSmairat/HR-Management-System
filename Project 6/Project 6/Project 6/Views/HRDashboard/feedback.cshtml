@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Project_6.Models.Contact>
+@{
+    Layout = "~/Views/Shared/_HHLayout.cshtml";
+}
+
+
+<h2>Our Feedback</h2>
+<hr />
+
+<button id="downloadPdf" class="btn btn-dark">Download As PDF 📥</button>
+<br />
+<br />
+
+
+<table id="tableFour" class="table table-bordered table-striped table-responsive-stack">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subject)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Message)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SubmissionDate)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Subject)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SubmissionDate)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+
+@*     <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-3">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">@item.Email</h6>
+                        <p class="card-text">@item.Message</p>
+                        <p class="card-text"><small>Subject: @item.Subject</small></p>
+                        <p class="card-text"><small>Submitted on: @Html.DisplayFor(modelItem => item.SubmissionDate)</small></p>
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Edit</a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-secondary">Details</a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div> *@
+
+
+
+
+<script>
+    document.getElementById('downloadPdf').addEventListener('click', function () {
+        const { jsPDF } = window.jspdf;
+        let doc = new jsPDF();
+
+        html2canvas(document.body).then(canvas => {
+            let imgData = canvas.toDataURL('image/png');
+            let imgWidth = 210; // A4 width in mm
+            let pageHeight = 297; // A4 height in mm
+            let imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+            doc.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+            doc.save('Report.pdf');
+        });
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>

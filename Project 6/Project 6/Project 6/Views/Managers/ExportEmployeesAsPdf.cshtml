@@ -1,0 +1,64 @@
+﻿@model List<Project_6.Models.Employee>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manager Employees</title>
+    <style>
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            .table th, .table td {
+                border: 1px solid #000;
+                padding: 8px;
+                text-align: left;
+            }
+
+            .table th {
+                background-color: #f2f2f2;
+            }
+    </style>
+</head>
+<body>
+    <h2>Employees under Manager</h2>
+    @if (Model != null && Model.Count > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Position</th>
+                    <th>Profile Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var employee in Model)
+                {
+                    <tr>
+                        <td>@employee.Name</td>
+                        <td>@employee.Email</td>
+                        <td>@employee.Position</td>
+                        <td>
+                            @if (!string.IsNullOrEmpty(employee.ProfileImage))
+                            {
+                                <img src="@employee.ProfileImage" alt="@employee.Name" style="width:50px;height:50px;" />
+                            }
+                            else
+                            {
+                                <p>No Image</p>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No employees available.</p>
+    }
+</body>
+</html>

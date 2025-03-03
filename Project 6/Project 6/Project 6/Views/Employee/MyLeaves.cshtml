@@ -1,0 +1,187 @@
+﻿@model IEnumerable<Project_6.Models.RequestLeave>
+
+
+
+@{
+    Layout = "~/Views/Shared/_LayoutEmployee.cshtml";
+}
+
+@section Style {
+    <link rel="stylesheet" href="~/css/EMPCSS/css/Table.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/EMPCSS/css/Leave.css" asp-append-version="true" />
+}
+
+
+
+
+<div class="container" style="margin-top:80px; margin-left:400px">
+    <h2>Leaves Applications</h2>
+
+    <div class="btn-1">
+        <button class="c-button" onclick="openLeaveForm()">
+            <span class="c-main">
+                <span class="c-ico"><span class="c-blur"></span> <span class="ico-text">+</span></span>
+                Request Leave
+            </span>
+        </button>
+
+        <button class="c-button" onclick="openVacationForm()">
+            <span class="c-main">
+                <span class="c-ico"><span class="c-blur"></span> <span class="ico-text">+</span></span>
+                Request Vacation
+            </span>
+        </button>
+    </div>
+
+    <table class="table table-bordered table-striped table-responsive-stack" id="tableOne">
+        <thead class="thead-dark">
+            <tr>
+
+                <th>Request Date</th>
+                <th>Start Date</th>
+                <th>End Date</th>                
+                <th>Request Name</th>
+                <th>Request Description</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Type</th>        
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.RequestDate</td>
+                    <td>@item.StartDate</td>
+                    <td>@item.EndDate</td>                    
+                    <td>@item.RequestName</td>
+                    <td>@item.RequestDescription</td>
+                    @if(item.StartTime == null)
+                    {
+                        <td>N/A</td>
+                    }
+                    else
+                    {
+                        <td>@item.StartTime</td>
+                    }
+
+                    @if (item.EndTime == null)
+                    {
+                        <td>N/A</td>
+                    }
+                    else
+                    {
+                        <td>@item.EndTime</td>
+                    }
+               
+                    
+                    @if (@item.EndTime != null)
+                    {
+                        <td>Leave</td>
+
+                    }
+                    else
+                    {
+                        <td>Vacation</td>
+                    }
+
+                   
+
+                    @if(item.Status == "Pending")
+                    {
+                        <td style="background-color:yellow;">@item.Status</td>
+                    }
+                    else if (item.Status == "Reject")
+                    {
+                        <td style="background-color:red;">@item.Status</td>
+                    }
+                    else if (item.Status == "Approve")
+                    {
+                        <td style="background-color:green;">@item.Status</td>
+                    }
+
+                 
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+<div id="leaveFormModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeLeaveForm()">&times;</span>
+        <h2>Leave Request Form</h2>
+        <form asp-action="leaveFormModal" method="post">
+            <select id="LeaveReason" name="LeaveReason">
+                <option value="Select Leave Type">Select Leave Type</option>
+                <option value="Sick Leave">Sick Leave</option>
+                <option value="Annual Leave">Annual Leave</option>
+                <option value="Maternity Leave">Maternity Leave</option>
+                <option value="casual">Casual Leave</option>
+            </select>
+            <input type="date" name="StartDate_1" placeholder="Start Date" required />
+            <input type="date" name="EndDate_1" placeholder="End Date" required />
+            <input type="time" name="StartTime_1" placeholder="Start Time" required />
+            <input type="time" name="EndTime_1" placeholder="End Time" required />
+            <textarea placeholder="Request Description" rows="5" cols="53" style="resize:none;" name="RequestDescription_1"></textarea>
+            <button type="submit" class="c-button">Leave Request</button>
+        </form>
+    </div>
+</div>
+
+
+<div id="vacationFormModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeVacationForm()">&times;</span>
+        <h2>Vacation Request Form</h2>
+        <form asp-action="VacationFormModal" method="post">
+            <select id="LeaveReason" name="LeaveReason">
+                <option value="Select Leave Type">Select Vacation Type</option>
+                <option value="Sick Leave">Sick Vacation</option>
+                <option value="Annual Leave">Annual Vacation</option>
+                <option value="Maternity Leave">Maternity Vacation</option>
+                <option value="casual">Casual Vacation</option>
+            </select>
+            <input type="date" name="StartDate_1" placeholder="Start Date" required />
+            <input type="date" name="EndDate_1" placeholder="End Date" required />
+            <button type="submit" class="c-button">Leave Request</button>
+        </form>
+    </div>
+</div>
+
+@section Script {
+    <script src="~/js/EMPJS/js/Table.js"></script>
+    <script>
+   
+        function openLeaveForm() {
+            document.getElementById('leaveFormModal').style.display = 'block';
+        }
+
+
+        function closeLeaveForm() {
+            document.getElementById('leaveFormModal').style.display = 'none';
+        }
+
+      
+        function openVacationForm() {
+            document.getElementById('vacationFormModal').style.display = 'block';
+        }
+
+   
+        function closeVacationForm() {
+            document.getElementById('vacationFormModal').style.display = 'none';
+        }
+
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('leaveFormModal')) {
+                closeLeaveForm();
+            }
+            if (event.target == document.getElementById('vacationFormModal')) {
+                closeVacationForm();
+            }
+        }
+    </script>
+}

@@ -1,0 +1,57 @@
+﻿* {
+    font-family: 'Poppins', sans-serif;
+}
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    .table th {
+        background-color: #40534C;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .table td {
+        text-align: center;
+    }
+
+    .table tbody tr:hover {
+        background-color: #D6BD98;
+    }
+
+button {
+    background-color: #40534C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    button:hover {
+        background-color: #D6BD98;
+    }
+
+.table-responsive-stack {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+select {
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+th {
+    padding: 15px;
+}
+
+h3 i {
+    margin-right: 5px;
+}

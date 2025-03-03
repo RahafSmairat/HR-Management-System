@@ -1,0 +1,265 @@
+﻿<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Site keywords here">
+    <meta name="description" content="">
+    <meta name='copyright' content=''>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title -->
+    <title>@ViewData["Title"]</title>
+    <!-- Favicon -->
+    <link rel="icon" href="~/img/favicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+          rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/css/HomeStyles/bootstrap.min.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="~/css/HomeStyles/nice-select.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="~/css/HomeStyles/font-awesome.min.css">
+    <!-- icofont CSS -->
+    <link rel="stylesheet" href="~/css/HomeStyles/icofont.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="~/css/HomeStyles/slicknav.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="~/css/HomeStyles/owl-carousel.css">
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="~/css/HomeStyles/datepicker.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="~/css/HomeStyles/animate.min.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="~/css/HomeStyles/magnific-popup.css">
+
+    <!-- Medipro CSS -->
+    <link rel="stylesheet" href="~/css/HomeStyles/normalize.css">
+    <link rel="stylesheet" href="~/css/HomeStyles/style.css">
+    <link rel="stylesheet" href="~/css/HomeStyles/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        .dropdown1 {
+            position: relative;
+            display: inline-block;
+            z-index:100;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #677D6A; 
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+            top: 100%; 
+            left: 0;
+        }
+
+            .dropdown-content a {
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                font-size: 14px;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #D6BD98;
+                }
+
+        .dropdown1:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header Area -->
+    <header class="header">
+        <!-- Header Inner -->
+        <div class="header-inner">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-12">
+                            <!-- Start Logo -->
+                            <div class="logo">
+                                <a href="index.html"><img src="~/img/logo.png" alt="#"></a>
+                            </div>
+                            <!-- End Logo -->
+                            <!-- Mobile Nav -->
+                            <div class="mobile-nav"></div>
+                            <!-- End Mobile Nav -->
+                        </div>
+                        <div class="col-lg-7 col-md-9 col-12">
+                            <!-- Main Menu -->
+                            <div class="main-menu">
+                                <nav class="navigation">
+                                    <ul class="nav menu justify-content-center">
+                                        <li><a asp-controller="HomePages" asp-action="Index">Home </a></li>
+                                        <li><a asp-controller="HomePages" asp-action="About">About Us</a></li>
+                                        <li><a asp-controller="HomePages" asp-action="Contact">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--/ End Main Menu -->
+                        </div>
+                        <div class="col-lg-2 col-12">
+                            @* <div class="get-quote">
+                                <a href="appointment.html" class="btn">Login</a>
+                            </div> *@
+                            <div class="get-quote">
+                                <div class="dropdown1">
+                                    <a href="#" class="btn">Login</a>
+                                    <div class="dropdown-content">
+                                        <a asp-controller="HomePages" asp-action="LoginEmp">Employee</a>
+                                        <a asp-controller="HomePages" asp-action="LoginManager">Manager</a>
+                                        <a asp-controller="HRDashboard" asp-action="LoginHR">HR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Header Inner -->
+    </header>
+    <!-- End Header Area -->
+    @RenderBody()
+
+    <!-- Footer Area -->
+    <footer id="footer" class="footer ">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>About Us</h2>
+                            <p>
+                                At ByteCraft, we provide innovative IT solutions that help businesses grow.
+                                From custom software development to expert support, our team delivers reliable, scalable
+                                solutions tailored to your needs.
+                            </p>
+                            <!-- Social -->
+                            <ul class="social">
+                                <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i> </a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer f-link">
+                            <h2>Quick Links</h2>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul>
+                                        <li>
+                                            <a a asp-controller="Home" asp-action="Index"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Home" asp-action="About"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Home" asp-action="Contact">
+                                                <i class="fa fa-caret-right" aria-hidden="true"></i>Contct
+                                                Us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>Find Us Here!</h2>
+                            <iframe style="height: 200px;"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.0095603888158!2d35.847093875112236!3d32.55259009542249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c7715f2c2e7ab%3A0x51755840c8ddbefd!2sOrange%20Digital%20Village%20Irbid!5e0!3m2!1sen!2sjo!4v1740769119173!5m2!1sen!2sjo"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Top -->
+        <!-- Copyright -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="copyright-content">
+                            <p>
+                                © Copyright 2025 | All Rights Reserved by <a href="#"
+                                                                             target="_blank">bytecraft.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Copyright -->
+    </footer>
+    <!--/ End Footer Area -->
+    <!-- jquery Min JS -->
+    <script src="~/js/HomeJS/jquery.min.js"></script>
+    <!-- jquery Migrate JS -->
+    <script src="~/js/HomeJS/jquery-migrate-3.0.0.js"></script>
+    <!-- jquery Ui JS -->
+    <script src="~/js/HomeJS/jquery-ui.min.js"></script>
+    <!-- Easing JS -->
+    <script src="~/js/HomeJS/easing.js"></script>
+    <!-- Color JS -->
+    <script src="~/js/HomeJS/colors.js"></script>
+    <!-- Popper JS -->
+    <script src="~/js/HomeJS/popper.min.js"></script>
+    <!-- Bootstrap Datepicker JS -->
+    <script src="~/js/HomeJS/bootstrap-datepicker.js"></script>
+    <!-- Jquery Nav JS -->
+    <script src="~/js/HomeJS/jquery.nav.js"></script>
+    <!-- Slicknav JS -->
+    <script src="~/js/HomeJS/slicknav.min.js"></script>
+    <!-- ScrollUp JS -->
+    <script src="~/js/HomeJS/jquery.scrollUp.min.js"></script>
+    <!-- Niceselect JS -->
+    <script src="~/js/HomeJS/niceselect.js"></script>
+    <!-- Tilt Jquery JS -->
+    <script src="~/js/HomeJS/tilt.jquery.min.js"></script>
+    <!-- counterup JS -->
+    <script src="~/js/HomeJS/jquery.counterup.min.js"></script>
+    <!-- Steller JS -->
+    <script src="~/js/HomeJS/steller.js"></script>
+    <!-- Wow JS -->
+    <script src="~/js/HomeJS/wow.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="~/js/HomeJS/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up CDN JS -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="~/js/HomeJS/.min.js"></script>
+    <!-- Main JS -->
+    <script src="~/js/HomeJS/main.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="~/js/HomeJS/owl-carousel.js"></script>
+
+</body>
+
+</html>

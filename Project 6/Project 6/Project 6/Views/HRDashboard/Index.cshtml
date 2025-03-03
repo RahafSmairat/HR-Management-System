@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{
+    Layout = "~/Views/Shared/_HHLayout.cshtml";
+}
+
+@section Style {
+    <link href="~/css/HRCSS/css/Index.css" rel="stylesheet" asp-append-version="true" />
+}
+
+
+    <main class="page-content ">
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="content">
+                <h2 class="title">Department</h2>
+                <p class="copy">Our Departments In The Company</p>
+                 @* <button class="btn">View</button> *@
+               @*  <button asp-controller="HRDashboard" asp-action="Department" class="btn">View </button> *@
+                @Html.ActionLink("View", "Department", "HRDashboard", new { }, new { @class = "btn" })
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="content">
+                <h2 class="title">Managers</h2>
+                <p class="copy">Our Manager In Comapany</p>
+                @* <button class="btn">View</button> *@
+                @Html.ActionLink("View", "Manager", "HRDashboard", new { }, new { @class = "btn" })
+               
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="content">
+                <h2 class="title">Employees</h2>
+                <p class="copy">Our Prductive Employees</p>
+                @* <button class="btn">View</button> *@
+            @Html.ActionLink("View", "IndexEmployee", "HRDashboard", new { }, new { @class = "btn" })
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <div class="content">
+                <h2 class="title">Feedback</h2>
+                <p class="copy">Coustomers Feedbacks</p>
+                @Html.ActionLink("View", "feedback", "HRDashboard", new { }, new { @class = "btn" })
+            </div>
+        </div>
+    </main>
+
+
+

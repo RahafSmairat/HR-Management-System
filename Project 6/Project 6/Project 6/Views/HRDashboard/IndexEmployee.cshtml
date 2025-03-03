@@ -1,0 +1,46 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    Layout = "~/Views/Shared/_HHLayout.cshtml";
+}
+
+@section Style {
+    <link href="~/css/HRCSS/css/IndexEmp.css" rel="stylesheet" asp-append-version="true" />
+}
+
+<main class="page-content ">
+  
+    <!-- Card 1 -->
+    <div class="card">
+        <div class="content">
+            <h2 class="title">Employee</h2>
+            <p class="copy">Our Employee In The Company</p>
+            @* <button class="btn">View</button> *@
+            @*  <button asp-controller="HRDashboard" asp-action="Department" class="btn">View </button> *@
+            @Html.ActionLink("View", "Employee", "HRDashboard", new { }, new { @class = "btn" })
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <div class="content">
+            <h2 class="title">Evaluation</h2>
+            <p class="copy">Yearly Employees Evaluation</p>
+            @* <button class="btn">View</button> *@
+            @Html.ActionLink("View", "Evaluation", "HRDashboard", new { }, new { @class = "btn" })
+
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <div class="content">
+            <h2 class="title">Approvment</h2>
+            <p class="copy">Employees Vacations And leaves</p>
+            @* <button class="btn">View</button> *@
+            @Html.ActionLink("View", "Approvment", "HRDashboard", new { }, new { @class = "btn" })
+        </div>
+    </div>

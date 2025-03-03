@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Project_6.Models.Manager>
+@{
+    Layout = "~/Views/Shared/_HHLayout.cshtml";
+}
+
+<p>
+    <a asp-action="CreateManager" class="btn btn-dark">Create New Manager</a>
+</p>
+<hr />
+<button id="downloadPdf" class="btn btn-dark">Download As PDF 📥</button>
+<br />
+<br />
+
+<table class="table table-bordered table-striped table-responsive-stack" id="tableThree">
+    <thead class="thead-dark">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+           @*  <th>@Html.DisplayNameFor(model => model.Password)</th> *@
+            <th>@Html.DisplayNameFor(model => model.ProfileImage)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Email</td>
+              @*   <td>@item.Password</td> *@
+                <td><img src="@Url.Content("~/HR_image/" + item.ProfileImage)" width="100" height="100" alt="Profile Image" /></td>
+                <td>
+                    <div style="display: flex; gap: 10px;">
+                        <a asp-action="Details" class="btn btn-success" asp-route-id="@item.Id">Details</a>
+                        <form method="post" action="@Url.Action("DeleteManager","HRDashboard")" onsubmit="return confirm('Are you sure you want to delete this manager?');">
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <button type="submit" class="btn btn-danger" asp-action="DeleteManager" asp-route-id="@item.Id">Delete</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<script>
+    document.getElementById('downloadPdf').addEventListener('click', function () {
+        const { jsPDF } = window.jspdf;
+        let doc = new jsPDF();
+
+        html2canvas(document.body).then(canvas => {
+            let imgData = canvas.toDataURL('image/png');
+            let imgWidth = 210; // A4 width in mm
+            let pageHeight = 297; // A4 height in mm
+            let imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+            doc.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+            doc.save('Report.pdf');
+        });
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
