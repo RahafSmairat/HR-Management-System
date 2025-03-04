@@ -80,7 +80,7 @@ public partial class MyDbContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.Description)
-                .HasMaxLength(100)
+                .HasMaxLength(500)
                 .IsUnicode(false);
             entity.Property(e => e.Image)
                 .HasMaxLength(255)
@@ -97,9 +97,7 @@ public partial class MyDbContext : DbContext
             entity.ToTable("empTask");
 
             entity.Property(e => e.Id).HasColumnName("ID");
-            entity.Property(e => e.Description)
-                .HasMaxLength(100)
-                .IsUnicode(false);
+            entity.Property(e => e.Description).HasColumnType("text");
             entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
             entity.Property(e => e.Name)
                 .HasMaxLength(100)

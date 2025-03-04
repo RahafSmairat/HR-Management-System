@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\HR_image\\13-Simple-Tips-for-The-Perfect-C.jpg"
     },
     {
-      "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\HR_image\\DALLE_2025-03-02_11.17.16_-_A_non-AI_themed_illustrative_scene_for_a_business_IT_environment_featuring_scalable_solutions._The_image_shows_a_modern_office_with_various_technology.webp",
-      "PackagePath": "staticwebassets\\HR_image\\DALLE_2025-03-02_11.17.16_-_A_non-AI_themed_illustrative_scene_for_a_business_IT_environment_featuring_scalable_solutions._The_image_shows_a_modern_office_with_various_technology.webp"
-    },
-    {
       "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\HR_image\\Screenshot (1).png",
       "PackagePath": "staticwebassets\\HR_image\\Screenshot (1).png"
     },
@@ -41,12 +37,44 @@
       "PackagePath": "staticwebassets\\HR_image\\about.jpg"
     },
     {
+      "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\HR_image\\beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector (1).jpg",
+      "PackagePath": "staticwebassets\\HR_image\\beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector (1).jpg"
+    },
+    {
       "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\HR_image\\employees.jpg",
       "PackagePath": "staticwebassets\\HR_image\\employees.jpg"
     },
     {
+      "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\HR_image\\hr.webp",
+      "PackagePath": "staticwebassets\\HR_image\\hr.webp"
+    },
+    {
       "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\HR_image\\image.png",
       "PackagePath": "staticwebassets\\HR_image\\image.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\HR_image\\images (1).png",
+      "PackagePath": "staticwebassets\\HR_image\\images (1).png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\HR_image\\images.jpg",
+      "PackagePath": "staticwebassets\\HR_image\\images.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\HR_image\\pexels-laura-tancredi-7078666.jpg",
+      "PackagePath": "staticwebassets\\HR_image\\pexels-laura-tancredi-7078666.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\HR_image\\pexels-pixabay-269077.jpg",
+      "PackagePath": "staticwebassets\\HR_image\\pexels-pixabay-269077.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\HR_image\\pexels-sevenstormphotography-443383.jpg",
+      "PackagePath": "staticwebassets\\HR_image\\pexels-sevenstormphotography-443383.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\HR_image\\печать-woman-avatar-profile-female-face-icon-vector-illustration-190750711.webp",
+      "PackagePath": "staticwebassets\\HR_image\\печать-woman-avatar-profile-female-face-icon-vector-illustration-190750711.webp"
     },
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
@@ -193,6 +221,10 @@
       "PackagePath": "staticwebassets\\img\\about.jpg"
     },
     {
+      "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\img\\beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector (1).jpg",
+      "PackagePath": "staticwebassets\\img\\beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector (1).jpg"
+    },
+    {
       "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\img\\employees.jpg",
       "PackagePath": "staticwebassets\\img\\employees.jpg"
     },
@@ -203,6 +235,10 @@
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\img\\hr.webp",
       "PackagePath": "staticwebassets\\img\\hr.webp"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\img\\images (1).png",
+      "PackagePath": "staticwebassets\\img\\images (1).png"
     },
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Project 6\\Project 6\\Project 6\\wwwroot\\img\\logo.png",

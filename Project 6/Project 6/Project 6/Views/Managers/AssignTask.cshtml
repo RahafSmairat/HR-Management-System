@@ -7,6 +7,7 @@
 <h1>Assign Task</h1>
 
 <hr />
+
 <div class="row">
     <div class="col-md-6">
         <form asp-action="AssignTask" method="post">
@@ -65,12 +66,16 @@
                 <input type="submit" value="Assign Task" class="btn btn-primary" />
             </div>
         </form>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-success">@ViewBag.Message</div>
+        }
     </div>
 </div>
 
-<div>
-    <a asp-action="Index" class="back">Back to Task List</a>
-</div>
+@* <div> *@
+@*     <a asp-action="Index" class="back">Back to Task List</a> *@
+@* </div> *@
 
 @* @section Scripts {
     @{

@@ -121,7 +121,7 @@ namespace Project_6.Controllers
                 return RedirectToAction("Dashboard");
 
             }
-            return View(employee);
+            return View();
         }
 
 
@@ -189,8 +189,10 @@ namespace Project_6.Controllers
                     // Send email notification
                     SendTaskAssignmentEmail(employee.Email, subject, body);
 
+                    ViewBag.Message = "A Task Was Added Sucessfully!";
+
                     // Redirect back to task list or confirmation page
-                    return RedirectToAction(nameof(AssignTask));
+                    return View();
                 }
             }
 
@@ -199,17 +201,41 @@ namespace Project_6.Controllers
             return View(task);
         }
 
+        //private void SendTaskAssignmentEmail(string recipientEmail, string subject, string body)
+        //{
+        //    using (SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 465))
+        //    {
+        //        smtpClient.UseDefaultCredentials = false;
+        //        smtpClient.EnableSsl = true;
+        //        smtpClient.Credentials = new NetworkCredential("rahaf.alsmairat@gmail.com", "louq hewz zfsx cmez");
+
+        //        MailMessage mailMessage = new MailMessage
+        //        {
+        //            From = new MailAddress("rahaf.alsmairat@gmail.com"),
+        //            Subject = subject,
+        //            Body = body,
+        //            IsBodyHtml = false
+        //        };
+
+        //        mailMessage.To.Add(recipientEmail);
+        //        smtpClient.Send(mailMessage);
+        //    }
+        //}
+
+
+
+
         private void SendTaskAssignmentEmail(string recipientEmail, string subject, string body)
         {
             using (SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587))
             {
                 smtpClient.UseDefaultCredentials = false;
                 smtpClient.EnableSsl = true;
-                smtpClient.Credentials = new NetworkCredential("abdallahalrayyan00@gmail.com", "tawn nlrt xfsz rmna");
-
+                smtpClient.Credentials = new NetworkCredential("rahaf.alsmairat@gmail.com", "louq hewz zfsx cmez");
+                smtpClient.Timeout = 30000;
                 MailMessage mailMessage = new MailMessage
                 {
-                    From = new MailAddress("abdallahalrayyan00@gmail.com"),
+                    From = new MailAddress("rahaf.alsmairat@gmail.com"),
                     Subject = subject,
                     Body = body,
                     IsBodyHtml = false
@@ -219,11 +245,6 @@ namespace Project_6.Controllers
                 smtpClient.Send(mailMessage);
             }
         }
-
-
-
-
-
 
 
 
@@ -240,7 +261,10 @@ namespace Project_6.Controllers
             {
                 // Check if the email exists in the Manager table
                 var manager = _context.Managers.FirstOrDefault(m => m.Email == email);
-                if (manager != null)
+                var employee = _context.Employees.FirstOrDefault(m => m.Email == email);
+                var hr = _context.Hrs.FirstOrDefault(m => m.Email == email);
+
+                if (manager != null || employee != null || hr != null)
                 {
                     // Generate a random 6-digit code
                     var code = GenerateRandomCode();
@@ -255,8 +279,11 @@ namespace Project_6.Controllers
                     return RedirectToAction("VerifyCode", new { email = email });
                 }
 
-                // For security reasons, don't reveal whether the email exists
-                ViewBag.ErrorMessage = "If your email is registered, you will receive a reset code.";
+                if (manager == null && employee == null && hr == null)
+                {
+                    ViewBag.ErrorMessage = "Invalid Email.";
+                }
+
             }
 
             return View();
@@ -274,11 +301,11 @@ namespace Project_6.Controllers
             {
                 smtpClient.UseDefaultCredentials = false;
                 smtpClient.EnableSsl = true;
-                smtpClient.Credentials = new NetworkCredential("abdallahalrayyan00@gmail.com", "tawn nlrt xfsz rmna");
+                smtpClient.Credentials = new NetworkCredential("rahaf.alsmairat@gmail.com", "louq hewz zfsx cmez");
 
                 MailMessage mailMessage = new MailMessage
                 {
-                    From = new MailAddress("abdallahalrayyan00@gmail.com"),
+                    From = new MailAddress("rahaf.alsmairat@gmail.com"),
                     Subject = "Password Reset Code",
                     Body = $"Your password reset code is: {code}",
                     IsBodyHtml = false
@@ -356,21 +383,56 @@ namespace Project_6.Controllers
             if (!string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(newPassword) && newPassword == confirmPassword)
             {
                 var manager = _context.Managers.FirstOrDefault(m => m.Email == email);
-                if (manager != null)
+                var employee = _context.Employees.FirstOrDefault(m => m.Email == email);
+                var hr = _context.Hrs.FirstOrDefault(m => m.Email == email);
+
+                if (manager!=null)
+                {
+                    
+                        // Hash the new password
+                        manager.Password = BCrypt.Net.BCrypt.HashPassword(newPassword);
+
+                        // Save changes to the database
+                        _context.Update(manager);
+                        _context.SaveChanges();
+
+                        // Remove the reset code from memory
+                        _resetCodes.Remove(email);
+
+                        // Redirect to confirmation page
+                        return RedirectToAction("LoginManager", "HomePages");
+                    
+                }else if(employee!=null)
                 {
                     // Hash the new password
-                    manager.Password = BCrypt.Net.BCrypt.HashPassword(newPassword);
+                    employee.Password = BCrypt.Net.BCrypt.HashPassword(newPassword);
 
                     // Save changes to the database
-                    _context.Update(manager);
+                    _context.Update(employee);
                     _context.SaveChanges();
 
                     // Remove the reset code from memory
                     _resetCodes.Remove(email);
 
                     // Redirect to confirmation page
-                    return RedirectToAction(nameof(Index));
+                    return RedirectToAction("LoginEmp", "HomePages");
                 }
+                else if (hr!=null)
+                {
+                    // Hash the new password
+                    hr.Password = BCrypt.Net.BCrypt.HashPassword(newPassword);
+
+                    // Save changes to the database
+                    _context.Update(hr);
+                    _context.SaveChanges();
+
+                    // Remove the reset code from memory
+                    _resetCodes.Remove(email);
+
+                    // Redirect to confirmation page
+                    return RedirectToAction("LoginHR", "HRDashboard");
+                }
+                
             }
 
             ViewBag.ErrorMessage = "Invalid input or passwords do not match.";

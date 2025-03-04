@@ -30,23 +30,32 @@ wwwroot\css\style.css
 wwwroot\favicon.ico
 wwwroot\HR_image\13-Simple-Tips-for-The-Perfect-C.jpg
 wwwroot\HR_image\about.jpg
-wwwroot\HR_image\DALLE_2025-03-02_11.17.16_-_A_non-AI_themed_illustrative_scene_for_a_business_IT_environment_featuring_scalable_solutions._The_image_shows_a_modern_office_with_various_technology.webp
+wwwroot\HR_image\beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector (1).jpg
 wwwroot\HR_image\employees.jpg
+wwwroot\HR_image\hr.webp
 wwwroot\HR_image\image.png
+wwwroot\HR_image\images (1).png
+wwwroot\HR_image\images.jpg
+wwwroot\HR_image\pexels-laura-tancredi-7078666.jpg
+wwwroot\HR_image\pexels-pixabay-269077.jpg
+wwwroot\HR_image\pexels-sevenstormphotography-443383.jpg
 wwwroot\HR_image\Screenshot (1).png
 wwwroot\HR_image\Screenshot 2024-12-09 170934.png
 wwwroot\HR_image\Screenshot 2024-12-09 170942.png
 wwwroot\HR_image\Screenshot 2024-12-09 170958.png
 wwwroot\HR_image\Screenshot 2024-12-18 145243.png
 wwwroot\HR_image\Screenshot 2024-12-18 150731.png
+wwwroot\HR_image\печать-woman-avatar-profile-female-face-icon-vector-illustration-190750711.webp
 wwwroot\img\1.jpg
 wwwroot\img\about.jpg
+wwwroot\img\beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector (1).jpg
 wwwroot\img\ByteCraft.png
 wwwroot\img\employees.jpg
 wwwroot\img\favicon.png
 wwwroot\img\Frame 1.png
 wwwroot\img\Frame_1.png
 wwwroot\img\hr.webp
+wwwroot\img\images (1).png
 wwwroot\img\logo.png
 wwwroot\js\bootstrap.min.js
 wwwroot\js\EMPJS\js\bootstarp.js
