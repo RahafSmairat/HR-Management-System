@@ -1,0 +1,78 @@
+﻿@model IEnumerable<Project_6.Models.RequestLeave>
+@{
+    Layout = "~/Views/Shared/_HHLayout.cshtml";
+}
+
+<h2>Approvment</h2>
+<hr />
+
+<button id="downloadPdf" class="btn btn-dark">Download As PDF 📥</button>
+<br />
+<br />
+
+<table class="table table-bordered table-striped table-responsive-stack" id="tableFour">
+    <thead class="thead-dark">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.RequestDate)</th>
+            <th>@Html.DisplayNameFor(model => model.StartDate)</th>
+            <th>@Html.DisplayNameFor(model => model.EndDate)</th>
+            <th>@Html.DisplayNameFor(model => model.Status)</th>
+            <th>@Html.DisplayNameFor(model => model.RequestName)</th>
+            <th>@Html.DisplayNameFor(model => model.RequestDescription)</th>           
+            <th>@Html.DisplayNameFor(model => model.StartTime)</th>
+            <th>@Html.DisplayNameFor(model => model.EndTime)</th>
+            <th>@Html.DisplayNameFor(model => model.Employee)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.RequestDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.StartDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.EndDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.Status)</td>
+                <td>@Html.DisplayFor(modelItem => item.RequestName)</td>
+                <td>@Html.DisplayFor(modelItem => item.RequestDescription)</td>
+                @if (item.StartTime == null)
+                {
+                    <td>N/A</td>
+                    <td>N/A</td>
+                }
+                else
+                {
+                    <td>@Html.DisplayFor(modelItem => item.StartTime)</td>
+                    <td>@Html.DisplayFor(modelItem => item.EndTime)</td>
+                }
+
+                <td>@Html.DisplayFor(modelItem => item.Employee.Name)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+
+    <a asp-action="IndexEmployee" class="btn btn-dark">Back to List</a>
+</div>
+
+
+<script>
+    document.getElementById('downloadPdf').addEventListener('click', function () {
+        const { jsPDF } = window.jspdf;
+        let doc = new jsPDF();
+
+        html2canvas(document.body).then(canvas => {
+            let imgData = canvas.toDataURL('image/png');
+            let imgWidth = 210; // A4 width in mm
+            let pageHeight = 297; // A4 height in mm
+            let imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+            doc.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+            doc.save('Report.pdf');
+        });
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>

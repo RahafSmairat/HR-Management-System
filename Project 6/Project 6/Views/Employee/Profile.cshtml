@@ -1,0 +1,99 @@
+﻿@model Project_6.Models.Employee
+
+
+@{
+    Layout = "~/Views/Shared/_LayoutEmployee.cshtml";
+}
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6 uxa-form-group mt-5">
+
+
+            <div class="uxa-user-avatar" style="display: flex;justify-content: center;" >
+                <img src="/img/@Context.Session.GetString("ProfileImage")" alt="User avatar" class="img-fluid rounded-circle" style="width: 150px; height: 150px;">
+            </div>
+
+            <form asp-action="EditProfile" method="post" class="mt-5 mb-5">
+
+
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input value="@Context.Session.GetString("UserName")" class="form-control" readonly />
+
+                </div>
+
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input value="@Context.Session.GetString("UserEmail")" class="form-control" readonly />
+
+                </div>
+
+                <div class="form-group">
+                    <label>Position:</label>
+                    <input value="@Context.Session.GetString("Position")" class="form-control" readonly />
+
+                </div>
+
+
+
+                <div class="pt-1 mb-4 editbtn">
+                    @* <button data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-lg btn-block" type="submit">Edit Profile</button> *@
+                    <a asp-action="EditProfile" type="submit" class="btn btn-dark btn-lg btn-block">Edit Profile</a>
+                    <a asp-action="ResetPassword" type="submit" class="btn btn-dark btn-lg btn-block">Reset Password</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+@* <style>
+    body {
+        background-color: #677D6A;
+    }
+
+    .form-group {
+        margin: 5%;
+    }
+
+    .uxa-form-group {
+        background-color: white;
+        padding: 2rem;
+        box-shadow: 0 0.2rem 0.6rem rgba(50, 50, 50, 0.15);
+    }
+
+    .form-group span {
+        color: red;
+    }
+
+    .uxa-user-avatar {
+        width: 140px;
+        height: 140px;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        // border: 1px solid lightgray;
+        // background-image: url(https://www.youth4work.com/Images/Users/771710.png);
+        // background-position: center center;
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // background-color: white;
+    }
+
+    .img {
+        width: 150px;
+    }
+
+    .editbtn {
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+</style>
+ *@

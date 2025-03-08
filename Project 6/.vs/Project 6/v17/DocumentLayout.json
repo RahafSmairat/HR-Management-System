@@ -1,0 +1,677 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\models\\evaluation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\models\\evaluation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\models\\emptask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\models\\emptask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\models\\requestleave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\models\\requestleave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\models\\hr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\models\\hr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\managers\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\managers\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\homepages\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\homepages\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\hrdashboard\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\hrdashboard\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\managers\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\managers\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\homepages\\loginmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\homepages\\loginmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\hrdashboard\\loginhr.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\hrdashboard\\loginhr.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\hrdashboard\\feedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\hrdashboard\\feedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\hrdashboard\\employee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\hrdashboard\\employee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\hrdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\hrdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\shared\\_dh.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\shared\\_dh.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\wwwroot\\css\\homestyles\\normalize.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\wwwroot\\css\\homestyles\\normalize.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\wwwroot\\css\\hrcss\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\wwwroot\\css\\hrcss\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\wwwroot\\css\\hrcss\\css\\indexemp.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\wwwroot\\css\\hrcss\\css\\indexemp.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\hrdashboard\\indexemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\hrdashboard\\indexemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\hrdashboard\\manager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\hrdashboard\\manager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\shared\\_hhlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\shared\\_hhlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\managers\\managerprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\managers\\managerprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\managers\\managereditprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\managers\\managereditprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\managers\\managerresetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\managers\\managerresetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\employee\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\employee\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\managers\\viewattendance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\managers\\viewattendance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\hrdashboard\\hrprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\hrdashboard\\hrprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\managers\\employee_evaluation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\managers\\employee_evaluation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\wwwroot\\css\\homestyles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\wwwroot\\css\\homestyles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\shared\\homelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\shared\\homelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\employee\\empresetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\employee\\empresetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\homepages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\homepages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|c:\\users\\orange\\desktop\\hr-management-system\\project 6\\project 6\\views\\shared\\_layoutemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45ACE3F5-CB19-4892-86FC-E5B4B147C839}|Project 6\\Project 6.csproj|solutionrelative:project 6\\views\\shared\\_layoutemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Evaluation.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\Evaluation.cs",
+              "RelativeDocumentMoniker": "Project 6\\Models\\Evaluation.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\Evaluation.cs",
+              "RelativeToolTip": "Project 6\\Models\\Evaluation.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T11:07:50.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmpTask.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\EmpTask.cs",
+              "RelativeDocumentMoniker": "Project 6\\Models\\EmpTask.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\EmpTask.cs",
+              "RelativeToolTip": "Project 6\\Models\\EmpTask.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T11:06:10.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RequestLeave.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\RequestLeave.cs",
+              "RelativeDocumentMoniker": "Project 6\\Models\\RequestLeave.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\RequestLeave.cs",
+              "RelativeToolTip": "Project 6\\Models\\RequestLeave.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T11:05:02.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Hr.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\Hr.cs",
+              "RelativeDocumentMoniker": "Project 6\\Models\\Hr.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\Hr.cs",
+              "RelativeToolTip": "Project 6\\Models\\Hr.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T11:04:37.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Project 6\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\Employee.cs",
+              "RelativeToolTip": "Project 6\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T11:04:02.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\Manager.cs",
+              "RelativeDocumentMoniker": "Project 6\\Models\\Manager.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\Manager.cs",
+              "RelativeToolTip": "Project 6\\Models\\Manager.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T11:01:31.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Project 6\\Models\\Department.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\Department.cs",
+              "RelativeToolTip": "Project 6\\Models\\Department.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T11:00:50.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "Project 6\\Models\\Contact.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\Contact.cs",
+              "RelativeToolTip": "Project 6\\Models\\Contact.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T11:00:37.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Attendance.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\Attendance.cs",
+              "RelativeDocumentMoniker": "Project 6\\Models\\Attendance.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\Attendance.cs",
+              "RelativeToolTip": "Project 6\\Models\\Attendance.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T11:00:28.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "Project 6\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "Project 6\\Models\\MyDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T10:59:49.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HomePages\\Contact.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\HomePages\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HomePages\\Contact.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\HomePages\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T19:12:55.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Managers\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\Managers\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Managers\\Dashboard.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\Managers\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T19:37:55.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\HRDashboard\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\Edit.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\HRDashboard\\Edit.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAkwCIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T21:41:53.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginManager.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HomePages\\LoginManager.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\HomePages\\LoginManager.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HomePages\\LoginManager.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\HomePages\\LoginManager.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAD0AAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T00:12:06.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Managers\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\Managers\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Managers\\ForgotPassword.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\Managers\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T00:13:16.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginHR.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\LoginHR.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\HRDashboard\\LoginHR.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\LoginHR.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\HRDashboard\\LoginHR.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAADwAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T18:42:13.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "feedback.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\feedback.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\HRDashboard\\feedback.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\feedback.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\HRDashboard\\feedback.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T18:29:08.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\appsettings.json",
+              "RelativeDocumentMoniker": "Project 6\\appsettings.json",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\appsettings.json",
+              "RelativeToolTip": "Project 6\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-03T19:02:46.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\HRDashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\Index.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\HRDashboard\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T18:29:29.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Employee.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\Employee.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\HRDashboard\\Employee.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\Employee.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\HRDashboard\\Employee.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAC4AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T18:29:41.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ViewAttendance.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Managers\\ViewAttendance.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\Managers\\ViewAttendance.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Managers\\ViewAttendance.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\Managers\\ViewAttendance.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAACMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T19:52:22.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_dh.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Shared\\_dh.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\Shared\\_dh.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Shared\\_dh.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\Shared\\_dh.cshtml",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T18:22:47.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_HHLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Shared\\_HHLayout.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\Shared\\_HHLayout.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Shared\\_HHLayout.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\Shared\\_HHLayout.cshtml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAswFwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T18:22:20.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IndexEmp.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\wwwroot\\css\\HRCSS\\css\\IndexEmp.css",
+              "RelativeDocumentMoniker": "Project 6\\wwwroot\\css\\HRCSS\\css\\IndexEmp.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\wwwroot\\css\\HRCSS\\css\\IndexEmp.css",
+              "RelativeToolTip": "Project 6\\wwwroot\\css\\HRCSS\\css\\IndexEmp.css",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAEwJkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-03T20:25:13.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ManagerProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Managers\\ManagerProfile.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\Managers\\ManagerProfile.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Managers\\ManagerProfile.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\Managers\\ManagerProfile.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T19:29:31.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "normalize.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\wwwroot\\css\\HomeStyles\\normalize.css",
+              "RelativeDocumentMoniker": "Project 6\\wwwroot\\css\\HomeStyles\\normalize.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\wwwroot\\css\\HomeStyles\\normalize.css",
+              "RelativeToolTip": "Project 6\\wwwroot\\css\\HomeStyles\\normalize.css",
+              "ViewState": "AgIAAPIBAAAAAAAAAAAAAPsBAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-03T20:42:48.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\wwwroot\\css\\HRCSS\\css\\Index.css",
+              "RelativeDocumentMoniker": "Project 6\\wwwroot\\css\\HRCSS\\css\\Index.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\wwwroot\\css\\HRCSS\\css\\Index.css",
+              "RelativeToolTip": "Project 6\\wwwroot\\css\\HRCSS\\css\\Index.css",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAEwJkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-03T20:26:30.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Employee\\Index.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\Employee\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Employee\\Index.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\Employee\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T20:33:33.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Manager.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\Manager.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\HRDashboard\\Manager.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\Manager.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\HRDashboard\\Manager.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T20:22:10.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IndexEmployee.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\IndexEmployee.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\HRDashboard\\IndexEmployee.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\IndexEmployee.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\HRDashboard\\IndexEmployee.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T18:29:48.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ManagerEditProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Managers\\ManagerEditProfile.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\Managers\\ManagerEditProfile.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Managers\\ManagerEditProfile.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\Managers\\ManagerEditProfile.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAAB8AAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T19:28:24.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ManagerResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Managers\\ManagerResetPassword.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\Managers\\ManagerResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Managers\\ManagerResetPassword.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\Managers\\ManagerResetPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T20:08:52.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Employee_evaluation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Managers\\Employee_evaluation.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\Managers\\Employee_evaluation.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Managers\\Employee_evaluation.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\Managers\\Employee_evaluation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T19:27:56.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\wwwroot\\css\\HomeStyles\\style.css",
+              "RelativeDocumentMoniker": "Project 6\\wwwroot\\css\\HomeStyles\\style.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\wwwroot\\css\\HomeStyles\\style.css",
+              "RelativeToolTip": "Project 6\\wwwroot\\css\\HomeStyles\\style.css",
+              "ViewState": "AgIAAE0QAAAAAAAAAAAAAHYQAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-03T19:14:13.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "HomeLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Shared\\HomeLayout.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\Shared\\HomeLayout.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Shared\\HomeLayout.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\Shared\\HomeLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T19:13:03.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "Project 6\\wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "Project 6\\wwwroot\\css\\style.css",
+              "ViewState": "AgIAAAQgAAAAAAAAAAAgwBAgAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-03T19:09:04.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "empResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Employee\\empResetPassword.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\Employee\\empResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Employee\\empResetPassword.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\Employee\\empResetPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T18:39:27.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HomePages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\HomePages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HomePages\\Index.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\HomePages\\Index.cshtml",
+              "ViewState": "AgIAANUAAAAAAAAAAAAvwOIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T18:35:07.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "HrProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\HrProfile.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\HRDashboard\\HrProfile.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\HRDashboard\\HrProfile.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\HRDashboard\\HrProfile.cshtml",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T18:31:31.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Employee\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\Employee\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Employee\\ResetPassword.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\Employee\\ResetPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T18:39:39.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "_LayoutEmployee.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Shared\\_LayoutEmployee.cshtml",
+              "RelativeDocumentMoniker": "Project 6\\Views\\Shared\\_LayoutEmployee.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\HR-Management-System\\Project 6\\Project 6\\Views\\Shared\\_LayoutEmployee.cshtml",
+              "RelativeToolTip": "Project 6\\Views\\Shared\\_LayoutEmployee.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T18:23:08.686Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

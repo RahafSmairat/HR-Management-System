@@ -1,0 +1,289 @@
+﻿@{
+    ViewData["Title"] = "ByteCraft - About Us";
+}
+@model List<Department>
+
+@{
+    Layout = "~/Views/Shared/HomeLayout.cshtml";
+}
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs overlay">
+    <div class="container">
+        <div class="bread-inner">
+            <div class="row">
+                <div class="col-12">
+                    <h2>About Us</h2>
+                    <ul class="bread-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </li>
+                        <li class="active">About Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumbs -->
+<!-- Start Mission -->
+<section class="portfolio section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>Our Mission</h2>
+                    <p>
+                        At ByteCraft, our mission is simple: to empower businesses through innovative
+                        technology solutions. We aim to deliver exceptional IT services that help our clients
+                        achieve their goals, streamline operations, and stay ahead in the ever-evolving digital
+                        world. Our focus is on building long-term relationships with our clients by providing
+                        reliable, scalable, and customized solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ End Mission -->
+<!-- Start Feautes -->
+<section class="Feautes section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>Our Services</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <!-- Start Single features -->
+                <div class="single-features">
+                    <div class="signle-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>24/7 IT Support</h3>
+                    <p>
+                        Instant help whenever you need it, ensuring business continuity.
+
+                    </p>
+                </div>
+                <!-- End Single features -->
+            </div>
+            <div class="col-lg-4 col-12">
+                <!-- Start Single features -->
+                <div class="single-features">
+                    <div class="signle-icon">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <h3>Expert IT Consulting</h3>
+                    <p>
+                        Tailored advice to optimize your tech and drive success.
+
+                    </p>
+                </div>
+                <!-- End Single features -->
+            </div>
+            <div class="col-lg-4 col-12">
+                <!-- Start Single features -->
+                <div class="single-features last">
+                    <div class="signle-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Scalable Solutions</h3>
+                    <p>
+                        Flexible IT services that grow with your business.
+
+                    </p>
+                </div>
+                <!-- End Single features -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ End Feautes -->
+<!-- Start Departments -->
+<section class="blog section" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>Our Departments</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="gap: 30px; margin-right: -100px;margin-left: -100px;">
+            @foreach (var department in Model)
+            {
+                <div class="col-lg-3 col-md-6 col-12" >
+
+                    @* <div class="single-news" style="height: 200px;"> *@
+                    @*     <div class="news-head"> *@
+                    @*         <img src="~/HR_image/@department.Image" alt="#"> *@
+                    @*     </div> *@
+                    @*     <div class="news-body" style="height: 200px;"> *@
+                    @*         <div class="news-content" style="height: 200px;"> *@
+                    @*             <h2><a href="blog-single.html">@department.Name</a></h2> *@
+                    @*             <p class="text">@department.Description</p> *@
+                    @*         </div> *@
+                    @*     </div> *@
+                    @* </div> *@
+
+                    <div class="card" style="width: 18rem; box-shadow: 0 0 3px #677D6A !important;height: 500px;">
+                        <img src="~/HR_image/@department.Image" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@department.Name</h5>
+                            <p class="card-text">@department.Description</p>
+                        </div>
+                    </div>
+
+                </div>
+            }
+        </div>
+
+    </div>
+</section>
+<!-- End Departments -->
+<!-- Start portfolio -->
+<section class="portfolio section" style="padding-top: 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>Our Team</h2>
+                    <p>
+                        Our team is composed of experienced IT professionals, developers, and strategists who are
+                        passionate about technology and committed to excellence. Each team member brings a wealth of
+                        expertise and a unique perspective, allowing us to tackle complex challenges and deliver
+                        outstanding results. We believe in collaboration, continuous learning, and always staying
+                        ahead of industry trends to offer the best possible service to our clients.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                <div class="owl-carousel portfolio-slider">
+                    <div class="single-pf">
+                        <img src="https://images.pexels.com/photos/7652469/pexels-photo-7652469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                             alt="#">
+                    </div>
+                    <div class="single-pf">
+                        <img src="https://images.pexels.com/photos/3183159/pexels-photo-3183159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                             alt="#">
+                    </div>
+                    <div class="single-pf">
+                        <img src="https://images.pexels.com/photos/3184438/pexels-photo-3184438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                             alt="#">
+                    </div>
+                    <div class="single-pf">
+                        <img src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                             alt="#">
+                    </div>
+                    <div class="single-pf">
+                        <img src="https://images.pexels.com/photos/7652469/pexels-photo-7652469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                             alt="#">
+                    </div>
+                    <div class="single-pf">
+                        <img src="https://images.pexels.com/photos/3183159/pexels-photo-3183159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                             alt="#">
+                    </div>
+                    <div class="single-pf">
+                        <img src="https://images.pexels.com/photos/3184438/pexels-photo-3184438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                             alt="#">
+                    </div>
+                    <div class="single-pf">
+                        <img src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                             alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ End portfolio -->
+<!-- Start Values -->
+<section class="blog section" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>Our Values</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Single Blog -->
+                <div class="single-news">
+                    <div class="news-head">
+                        <i class="fas fa-lightbulb"></i>
+
+                    </div>
+                    <div class="news-body">
+                        <div class="news-content">
+                            <h2><a href="blog-single.html">Innovation</a></h2>
+                            <p class="text">We are constantly exploring new technologies to bring fresh, innovative solutions to our clients.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Blog -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Single Blog -->
+                <div class="single-news">
+                    <div class="news-head">
+                        <i class="fas fa-handshake"></i>
+
+                    </div>
+                    <div class="news-body">
+                        <div class="news-content">
+                            <h2><a href="blog-single.html">Integrity</a></h2>
+                            <p class="text">We operate with transparency, honesty, and a commitment to ethical business practices.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Blog -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Single Blog -->
+                <div class="single-news">
+                    <div class="news-head">
+                        <i class="fas fa-users"></i>
+
+                    </div>
+                    <div class="news-body">
+                        <div class="news-content">
+                            <h2><a href="blog-single.html">Customer-Centric</a></h2>
+                            <p class="text">Our clients’ success is our success. We prioritize their needs and build lasting partnerships.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Blog -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Single Blog -->
+                <div class="single-news">
+                    <div class="news-head">
+                        <i class="fas fa-trophy"></i>
+
+                    </div>
+                    <div class="news-body">
+                        <div class="news-content">
+                            <h2><a href="blog-single.html">Excellence</a></h2>
+                            <p class="text">We strive for perfection in everything we do, ensuring high-quality results and reliable performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Blog -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Values -->

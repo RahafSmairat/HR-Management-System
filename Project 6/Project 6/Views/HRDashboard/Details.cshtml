@@ -1,0 +1,40 @@
+﻿@model Project_6.Models.Manager
+@{
+    Layout = "~/Views/Shared/_HHLayout.cshtml";
+}
+
+
+
+<div>
+    <h2>Details Of Manager</h2>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        @* <dt class = "col-sm-2"> *@
+        @*     @Html.DisplayNameFor(model => model.Password) *@
+        @* </dt> *@
+        @* <dd class = "col-sm-10"> *@
+        @*     @Html.DisplayFor(model => model.Password) *@
+        @* </dd> *@
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ProfileImage)
+        </dt>
+        <dd class="col-sm-10">
+            <img src="@Url.Content("~/HR_image/" + Model.ProfileImage)" width="200" height="200" alt="Profile Image" />
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Manager" class="btn btn-dark">Back to List</a>
+</div>
